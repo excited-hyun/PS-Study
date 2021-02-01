@@ -3,7 +3,7 @@ Study Algorithm🤯
 
 ## Algorithm
 
-✅Greedy
-✅BFS
-DFS
-Dijkstra
+✅ Greedy   
+✅ BFS   
+DFS   
+Dijkstra   
