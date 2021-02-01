@@ -1,6 +1,8 @@
 # BaekJoon
 Study Algorithm🤯
-##Algorithm
+
+## Algorithm
+
 ✅Greedy
 ✅BFS
 DFS
