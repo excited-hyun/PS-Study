@@ -6,4 +6,4 @@ Study Algorithm🤯
 ✅ Greedy   
 ✅ BFS   
 DFS   
-Dijkstra   
+✅ Dijkstra   
