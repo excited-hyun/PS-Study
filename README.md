@@ -5,5 +5,6 @@ Study Algorithm🤯
 
 ✅ Greedy   
 ✅ BFS   
-DFS   
+✅ DFS   
 ✅ Dijkstra   
+✅ DP   
