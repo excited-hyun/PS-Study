@@ -8,7 +8,6 @@ using namespace std;
 int ch[501];
 int sum[501];
 int tb[501][501];
-int MIN = 5000000;
 
 int main (void){
     int t, n;
