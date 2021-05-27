@@ -17,3 +17,5 @@ Beakjoon 문제로 알고리즘 공부중 🤯
 ✅ Divide & Conquer   
 ✅ binary search  
 ✅ math  
+✅ Bruteforcing   
+
