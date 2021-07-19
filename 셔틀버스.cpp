@@ -8,6 +8,7 @@ using namespace std;
 string solution(int n, int t, int m, vector<string> timetable) {
     string answer = "";
     vector<int> mintable;
+    
     //분 단위로 변환
     for (int i = 0; i < timetable.size(); i++)
     {
