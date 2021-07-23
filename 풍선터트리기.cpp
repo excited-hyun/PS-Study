@@ -7,7 +7,7 @@ using namespace std;
 int solution(vector<int> a) {
     stack<int> check;       //왼, 오 최솟값에 이용
     
-    vector<int> del;        //삭제가능여부 저장 - 가능: 0 / 불가능: 1
+    vector<int> del;        //남기기 가능여부 저장 - 가능: 0 / 불가능: 1
     del.resize(a.size());
     fill(del.begin(), del.end(), 1);    //1로 초기화
     
