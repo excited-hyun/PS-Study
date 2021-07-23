@@ -1,0 +1,68 @@
+#include <string>
+#include <vector>
+#include <stack>
+
+using namespace std;
+
+int solution(vector<int> a) {
+    stack<int> check;       //왼, 오 최솟값에 이용
+    
+    vector<int> del;        //삭제가능여부 저장 - 가능: 0 / 불가능: 1
+    del.resize(a.size());
+    fill(del.begin(), del.end(), 1);    //1로 초기화
+    
+    int answer = 0;
+    //왼쪽 확인
+    for(int i=0; i<a.size(); i++){
+        //stack이 빈 상태
+        if (check.empty()){
+            check.push(a[i]);
+            del[i] = 0;             //왼쪽에 아무 값도 없음
+        }
+        //stack에 값이 있는 상태
+        else{
+            //stack
+            int num = check.top();
+            
+            //지금 풍선이 왼쪽 값들 중 최솟값보다 작음(stack의 top 값)
+            if(num > a[i]){
+                check.pop();
+                check.push(a[i]);   //최솟값 업데이트
+                del[i] = 0;         //왼쪽에 자신보다 큰 값이 있으므로 삭제 가능
+            }
+            
+        }
+    }
+    if (!check.empty())
+        check.pop();
+    //오른쪽 확인
+    for(int i=a.size()-1; i>=0; i--){
+        //stack이 빈 상태
+        if (check.empty()){
+            check.push(a[i]);
+            del[i] = 0;             //오른쪽에 아무 값도 없음
+        }
+        //stack에 값이 있는 상태
+        else{
+            //stack
+            int num = check.top();
+            
+            //지금 풍선이 오른쪽 값들 중 최솟값보다 작음(stack의 top 값)
+            if(num > a[i]){
+                check.pop();
+                check.push(a[i]);   //최솟값 업데이트
+                del[i] = 0;         //왼쪽에 자신보다 큰 값이 있으므로 삭제 가능
+            }
+            
+        }
+    }
+    
+    for(int i=0; i<del.size(); i++){
+        if(del[i] == 0){
+            answer++;
+        }
+            
+    }
+    
+    return answer;
+}
