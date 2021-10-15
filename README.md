@@ -3,7 +3,9 @@
 <br/>
 
 Beakjoon, 프로그래머스, SWEA 문제로 알고리즘 공부중 🤯   
-아직은 알린이👶🏻  
+
+
+
 문제번호(숫자).cpp/.java은 백준  
 문제이름(한글).cpp/.java은 프로그래머스  
 SWEA문제번호.cpp/.java는 SWEA  
